@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo</title>
+</head>
+<body>
+
+    <!-- Linha Divisória (br = pular linha / hr = linha horizontal)-->
+    <br/> 
+    <hr/>
+    <br/>
+
+    <!-- Novo Resumo -->
+    <h1>Principais formatações</h1>
+
+    <!-- Símbolos Especiais -->
+    <h2>Símbolos Especiais</h2>
+    <p>
+        &reg;
+        &copy;       
+        &trade;        
+        &euro;
+        &pound;
+        &yen;
+        &cent;
+        &Delta;       
+        &uparrow;
+        &gt;
+        <!-- Emoji ( https://emojipedia.org/ )-->
+        &#x1F525;
+        &#x26A1;            
+    </p>
+
+    <!-- Negrito -->
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos <b>termo em negrito</b> usando a tag B ( não semântico ).</p>
+    <p>Nessa frase temos <strong>termo em negrito</strong> usando a tag STRONG ( semântico ).</p>
+
+    <!-- Itálico -->
+    <h2>Itálico / Ênfase</h2>
+    <p>Nessa frase temos um <i>termo em itálico</i> usando a tag I ( não semântico ).</p>
+    <p>Nessa frase temos um <em>termo em ênfase</em> usando a tag EM ( semântico ).</p>
+
+    <!-- Marca texto -->
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag MARK.</p>
+    <p>E no outro parágrafo, temos outro <mark style="background-color: cyan;">texto marcado</mark> usando a tag MARK.</p>
+
+    <!-- Texto grande e Pequeno -->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um texto <big>grande</big> e um texto <small>pequeno</small> nesse parágrafo.</p>
+
+    <!-- Texto deletado -->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele de ser</p>
+
+    <!-- Texto inserido -->
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois ( semântico )</p>
+    <p>Existe também o <U>sublinhado</U> com a tag U ( não semântico )</p>
+
+    <!-- Texto sobrescrito -->
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+
+    <!-- Texto subscrito -->
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>0</p>
+
+    <!-- Código-fonte -->
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <pre>
+        <code>
+            int main()
+            {
+                int x;
+                scanf("%d", &x);
+                if(x % 2 == 0)
+                {
+                    printf("%d", x);
+                }
+            return 0;
+            }
+        </code>
+    </pre>
+
+    <!-- Citações -->
+    <h2>Citações</h2>
+    <p>Como diria o pai do meu amigo: <q>o computador é um burro muito rápido</q> ( Citação SIMPLES )</p>
+    <P>Segundo Jeff Noble, no seu livro HTML para Leigos: ( Citação COMPLETA )</p>
+    <blockquote>
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML nesse capítulo descrevem os blocos de texto.
+    </blockquote>
+
+    <!-- Abreviações -->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+
+    <!-- Texto invertido -->
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+
+    <!-- Listas -->
+    <h2>Listas Ordenadas</h2>
+     <ol type="a"> <!-- (I = números romanos / starts="4" = começar no 4) -->
+        <li>Acordar</li>
+        <li>Ligar para a Ana</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+
+    <h2>Listas não Ordenada</h2>
+    <ul type="square"> <!-- disc, circle, square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+    </ul>
+
+    <!-- Listas Mistas -->
+    <h2>Listas mistas</h2>
+    <ol>
+        <li>Linguagens</li>
+        <ol type="a">
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+        <li>Outras</li>
+        <ol type="a">
+            <li>PHP</li>
+            <li>Visual Basic</li>
+            <li>C++</li>
+        </ol>
+    </ol>
+
+    <h2>Listas mistas 2</h2>
+    <ol>
+        <li>PC</li>
+        <ul>
+            <li>League of legends</li>
+            <li>Magic the gathering</li>
+        </ul>
+        <li>Xbox</li>
+        <ul>
+            <li>Rainbow six</li>
+            <li>far cry</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul>
+            <li>Call of duty</li>
+            <li>Mortal kombat</li>
+        </ul>
+    </ol>
+
+    <!-- Lista de Definições -->
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criança de desing de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+    </dl>
+
+    <!-- Links externos -->
+    <h2>Usando Links externos</h2>
+    <p>Você pode acessar o <a href="http://www.google.com" target="_blank" rel="external">site do google</a> </p>
+    <p>Você pode acessar a <a href="https://coinmarketcap.com/pt-br/currencies/bombcrypto/" target="_blank" rel="external">cotação do bcoin</a></p>
+
+    <!-- Links internos -->
+    <h2>Usando Links internos</h2>
+    <p>Esta é  primeira página do site. Se você quiser, pode acessar também a minha <a href="pag2.html" rel="next" target="_self">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag3.html" rel="next">página de notícias</a></p>
+
+    <!-- Links para download -->
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/10+-+Ligações+em+toda+parte.zip" download="10+-+Ligações+em+toda+parte.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+    <!-- Tables -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Igor Ivanov</td>
+                <td>igorivanaov@hotmail.com</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Ana Luiza</td>
+                <td>AnaLu@hotmail.com</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Lucas Quaglio</td>
+                <td>Lucs@hotmail.com</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br/>
+
+    <!-- Formulários -->
+    <form action="form.php" method="POST">
+        <div>
+            <label>Primeiro Nome:</label>
+            <input type="text" placeholder="Entre seu primeiro nome" />
+        </div>
+        
+        <div>
+            <label>Segundo Nome:</label>
+            <input type="text" />
+        </div>
+
+        <div>
+            <label>Email:</label>
+            <input type="email" />
+        </div>
+
+        <div>
+            <label>Gênero:</label>
+            <select>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Data de nascimento:</label>
+            <input type="date" />
+        </div>
+
+        <div>
+            <label>Senha:</label>
+            <input type="password" />
+        </div>
+
+        <div>
+            <label>Mensagem:</label>
+            <textarea name="mensagem"></textarea>
+        </div>
+
+        <input type="submit" />
+    </form>
+
+    <!-- Copyright -->
+    <footer>
+        <p>&copy; Resumo do Igor</p>
+    </footer>
+
+</body>
+</html>

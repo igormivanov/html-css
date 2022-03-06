@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* @ siginifica regra, regra @chrset é caso haja problemas com acentuação */
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: midnightblue;
+    background-color: lightblue;
+}
+
+h2 {
+    color: crimson;
+}
+
+p {
+    text-align: justify;
+}

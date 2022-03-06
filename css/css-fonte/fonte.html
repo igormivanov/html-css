@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+        /* font-family: 'Shizuru', cursive; */
+
+
+        /* Primeiro ele vai tentar Arial, depois Helvetica e por fim se nenhuma das duas funcionarem, ele usa a sans-serif (sem serifa) que é uma generica */
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm, mm, in(polegada), px(usar essa), pt, pc
+
+            Medidas Relativas
+            em(usar essa), ex, rem, vw, vh, %
+
+            16px geralmente = 1em
+
+             */
+
+            font-size: 1em;
+            /* lighter, normal, bold, bolder */
+        }
+
+        /*  Google Fonts */
+
+        h1, h2 {
+            font-size: 16px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+
+            /* font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'Times New Roman';
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Cumque illum sapiente harum aliquam corporis ullam dolores, 
+        asperiores id reiciendis numquam dicta dolorem tenetur quas, 
+        reprehenderit nam sit voluptatum. Quam ut sed aperiam cupiditate 
+        recusandae magni natus iste ex. Eos quam, debitis 
+        expedita maxime quo sit cumque iure voluptatibus possimus pariatur.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Magni saepe iste fugiat 
+        quaerat voluptatum odit a, voluptate amet hic rem!
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Error praesentium quos ipsum nostrum laboriosam laborum nemo. 
+        Fuga accusantium pariatur mollitia dolorum quod provident 
+        atque, cum doloremque impedit! Quisquam, fugit suscipit.
+    </p>
+</body>
+</html>

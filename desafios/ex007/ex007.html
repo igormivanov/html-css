@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex007</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    Você está vendo a imagem completa? Experimente ampliar o tamnaho da sua janela
+    para aproveita melhor a experiência &#x1F624;
+
+    <br/>
+    <!-- Imagem -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/imagem-fut-p.jpg" 
+        type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="img/imagem-fut-m.jpg" 
+        type="image/jpg">
+        <img src="img/imagem-fut-g.jpg" alt="Imagem flexível">
+    </picture>
+
+</body>
+</html>

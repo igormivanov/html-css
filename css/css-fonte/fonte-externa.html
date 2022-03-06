@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @font-face {
+            font-family: 'Love'; /* <-- Pode escolher o nome da fonte */
+            src: url('fonts/love story.ttf') format('truetype');
+            font-style: normal;
+            font-weight: normal;
+
+            /* 
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanaced Typography)
+                -svg
+            */
+        }
+        
+
+        /* 
+            Site de fontes: 
+            - https://www.dafont.com/pt/ 
+            - https://fonts.google.com/
+
+            Retirar fontes de imagens:
+            - https://www.myfonts.com/WhatTheFont/
+            - https://www.fontsquirrel.com/
+            - https://www.whatfontis.com/
+        
+        
+        */
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+
+          font-family: 'Love', Times, serif;
+          font-size: 3em;
+          font-weight: normal;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Cumque illum sapiente harum aliquam corporis ullam dolores, 
+        asperiores id reiciendis numquam dicta dolorem tenetur quas, 
+        reprehenderit nam sit voluptatum. Quam ut sed aperiam cupiditate 
+        recusandae magni natus iste ex. Eos quam, debitis 
+        expedita maxime quo sit cumque iure voluptatibus possimus pariatur.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Magni saepe iste fugiat 
+        quaerat voluptatum odit a, voluptate amet hic rem!
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Error praesentium quos ipsum nostrum laboriosam laborum nemo. 
+        Fuga accusantium pariatur mollitia dolorum quod provident 
+        atque, cum doloremque impedit! Quisquam, fugit suscipit.
+    </p>
+</body>
+</html>

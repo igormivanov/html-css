@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceira página</title>
+</head>
+<body>
+    <h1>Terceira página</h1>
+    <p>Esta é a terceira página.</p>
+    <p><a href="../Estudo.html">Voltar para a primeira página</a></p>
+
+    <h2>Imagem dinâmica</h2>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou
+        simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" 
+        type="image/png"> 
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" 
+        type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!-- MP3 wav OGG -->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <!-- 
+        Preload = Indica se o áudio será pré-carregado ou não
+        METADATA = Vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de diretos)
+        NONE = Não vai carregar nada até que o usuário clique no botão play
+        AUTO = Vai carregar o arquivo de áudio inteiro assim que  página for carregada (Ruim pois ele só vai considerar que o site carregou, após terminar de carregar todo áudio )
+        Tags (CONTROL = Apresentar o player na tela. AUTOPLAY = Inicir o áudio assim que a página for carregada, Loop = repetir o áudio eternamente)
+    -->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.mp3" type="audio/ogg">
+        <source src="midia/happy-mistake.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+    </audio>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor.</p>
+
+    <!-- Obs: Geralmente são utilizados vídeos do Youtube -->
+    <video width="500" poster="imagens/limoes-capa.png" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <p>Seu navegador nãO tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7IPG42QY52Q" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
